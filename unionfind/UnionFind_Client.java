@@ -8,9 +8,10 @@ import java.io.IOException;
 import java.io.FileNotFoundException;
 
 import unionfind.UnionFind_QuickFind;
-
+import unionfind.UnionFind_QuickUnion;
 
 public class UnionFind_Client {
+    // Usage: java unionfind.UnionFind_Client <inputFileForConnections>
     public static void main(final String args[]) {
         // Read connections and queries from file
         final String inputFilePath = args[0];
@@ -33,8 +34,9 @@ public class UnionFind_Client {
             return;
         }
 
-        // Instantiate a UnionFind object
-        final UnionFind_QuickFind unionObj = new UnionFind_QuickFind(Integer.parseInt(fileLine));
+        // Instantiate a UnionFind object based on QuickFind or QuickUnion
+        // final UnionFind_QuickFind unionObj = new UnionFind_QuickFind(Integer.parseInt(fileLine));
+        final UnionFind_QuickUnion unionObj = new UnionFind_QuickUnion(Integer.parseInt(fileLine));
 
         // Read and call union for remaining lines in file
         while (true) {
