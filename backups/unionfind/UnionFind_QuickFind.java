@@ -7,7 +7,7 @@ public class UnionFind_QuickFind {
 
     // Constructor to initialize class
     public UnionFind_QuickFind(final int maxSize) {
-        System.out.println("Creating UnionFind of size: " + maxSize);
+        // System.out.println("Creating UnionFind of size: " + maxSize);
         this.connectArray = new Integer[maxSize];
         this.maxSize = maxSize;
 
@@ -29,9 +29,12 @@ public class UnionFind_QuickFind {
         int newValue = connectArray[element1];
         int oldValue = connectArray[element2];
 
+        if(oldValue == newValue)
+            return true;
+
         for(int i = 0; i < this.maxSize; i++){
             if(connectArray[i] == oldValue){
-                System.out.println("Modifying index: " + i + " from " + oldValue + " to " + newValue);
+                // System.out.println("Modifying index: " + i + " from " + oldValue + " to " + newValue);
                 connectArray[i] = newValue;
             }
         }

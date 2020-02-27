@@ -29,9 +29,12 @@ public class UnionFind_QuickFind {
         int newValue = connectArray[element1];
         int oldValue = connectArray[element2];
 
+        if(newValue == oldValue)
+            return true;
+
         for(int i = 0; i < this.maxSize; i++){
             if(connectArray[i] == oldValue){
-                System.out.println("Modifying index: " + i + " from " + oldValue + " to " + newValue);
+                // System.out.println("Modifying index: " + i + " from " + oldValue + " to " + newValue);
                 connectArray[i] = newValue;
             }
         }

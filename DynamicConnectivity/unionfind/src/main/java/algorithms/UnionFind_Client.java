@@ -41,9 +41,9 @@ public class UnionFind_Client {
 
         // Instantiate a UnionFind object based on QuickFind or QuickUnion
         
-        // final UnionFind_QuickFind unionObj = new UnionFind_QuickFind(Integer.parseInt(fileLine));
+        final UnionFind_QuickFind unionObj = new UnionFind_QuickFind(Integer.parseInt(fileLine));
         // final UnionFind_QuickUnion unionObj = new UnionFind_QuickUnion(Integer.parseInt(fileLine));
-        final UnionFind_WeightedUnion unionObj = new UnionFind_WeightedUnion(Integer.parseInt(fileLine));
+        // final UnionFind_WeightedUnion unionObj = new UnionFind_WeightedUnion(Integer.parseInt(fileLine));
         Integer opCounter = 0;
         
         long startTime = System.nanoTime();
@@ -113,7 +113,7 @@ public class UnionFind_Client {
 
         timeDiffMs = ((float) timeDiff / 1000000);
 
-        System.out.println("Total time taken for unions (ms): " + (timeDiffMs));
+        System.out.println("Total time taken for finds (ms): " + (timeDiffMs));
         System.out.println("Time per union operation (ns): " + (timeDiff / numQueries));
 
 

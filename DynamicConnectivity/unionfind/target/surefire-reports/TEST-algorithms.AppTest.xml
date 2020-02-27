@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="algorithms.AppTest" time="0.029" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="algorithms.AppTest" time="0.04" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -7,7 +7,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="Z:\GitRepositories_Root\Algorithms_Part1\unionfind\unionfind\target\test-classes;Z:\GitRepositories_Root\Algorithms_Part1\unionfind\unionfind\target\classes;C:\Users\fbuno\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\fbuno\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="Z:\GitRepositories_Root\Algorithms_Part1\DynamicConnectivity\unionfind\target\test-classes;Z:\GitRepositories_Root\Algorithms_Part1\DynamicConnectivity\unionfind\target\classes;C:\Users\fbuno\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\fbuno\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -18,20 +18,20 @@
     <property name="user.country" value="CA"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\fbuno\AppData\Local\Temp\surefire7656885777908370650\surefirebooter7887719144857738176.jar C:\Users\fbuno\AppData\Local\Temp\surefire7656885777908370650 2020-02-27T14-17-42_926-jvmRun1 surefire7820389984144867293tmp surefire_04683384335378683451tmp"/>
-    <property name="surefire.test.class.path" value="Z:\GitRepositories_Root\Algorithms_Part1\unionfind\unionfind\target\test-classes;Z:\GitRepositories_Root\Algorithms_Part1\unionfind\unionfind\target\classes;C:\Users\fbuno\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\fbuno\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.java.command" value="C:\Users\fbuno\AppData\Local\Temp\surefire7603679417048064954\surefirebooter278580884934756204.jar C:\Users\fbuno\AppData\Local\Temp\surefire7603679417048064954 2020-02-27T16-23-21_917-jvmRun1 surefire224010554134608120tmp surefire_07097985248022285953tmp"/>
+    <property name="surefire.test.class.path" value="Z:\GitRepositories_Root\Algorithms_Part1\DynamicConnectivity\unionfind\target\test-classes;Z:\GitRepositories_Root\Algorithms_Part1\DynamicConnectivity\unionfind\target\classes;C:\Users\fbuno\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\fbuno\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\fbuno"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_101\jre"/>
-    <property name="basedir" value="Z:\GitRepositories_Root\Algorithms_Part1\unionfind\unionfind"/>
+    <property name="basedir" value="Z:\GitRepositories_Root\Algorithms_Part1\DynamicConnectivity\unionfind"/>
     <property name="file.separator" value="\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\fbuno\AppData\Local\Temp\surefire7656885777908370650\surefirebooter7887719144857738176.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\fbuno\AppData\Local\Temp\surefire7603679417048064954\surefirebooter278580884934756204.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_101\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -47,7 +47,7 @@
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\fbuno\AppData\Local\Temp\"/>
     <property name="java.version" value="1.8.0_101"/>
-    <property name="user.dir" value="Z:\GitRepositories_Root\Algorithms_Part1\unionfind\unionfind"/>
+    <property name="user.dir" value="Z:\GitRepositories_Root\Algorithms_Part1\DynamicConnectivity\unionfind"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
