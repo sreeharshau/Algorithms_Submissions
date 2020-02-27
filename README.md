@@ -3,7 +3,10 @@
 Algorithm Implementations and Performance for algorithms from the __Algorithms and Data Structures (Part 1)__ course from Princeton University
 
 # Repository Structure
-Each sub-project (except HelloWorld) comes with full maven support and can be built using mvn package. To run the application, refer to the text below:
+Each sub-project (except HelloWorld) comes with full maven support and can be built using __mvn package__. To run the application, refer to the sections below.
+
+## Dependencies
+All projects require [Apache Maven](https://maven.apache.org/index.html) and [JDK](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html) to be installed and relevant paths set up on the target machine.
 
 ## Dynamic Connectivity
 ### Build Steps
