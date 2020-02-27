@@ -1,4 +1,4 @@
-package unionfind;
+package algorithms;
 
 public class UnionFind_WeightedUnion {
 

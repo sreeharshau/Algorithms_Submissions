@@ -1,4 +1,4 @@
-package unionfind;
+package algorithms;
 
 import java.io.File;
 import java.io.FileReader;
@@ -7,9 +7,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.FileNotFoundException;
 
-import unionfind.UnionFind_QuickFind;
-import unionfind.UnionFind_QuickUnion;
-import unionfind.UnionFind_WeightedUnion;
+import algorithms.UnionFind_QuickFind;
+import algorithms.UnionFind_QuickUnion;
+import algorithms.UnionFind_WeightedUnion;
 
 import java.util.concurrent.TimeUnit;
 
@@ -25,7 +25,7 @@ public class UnionFind_Client {
         try{
             fileLines = new BufferedReader(new FileReader(inputFile));
         }
-        catch (FileNotFoundException f){
+        catch (final FileNotFoundException f){
             System.out.println("Input File not found");
             return;
         }
@@ -42,8 +42,8 @@ public class UnionFind_Client {
         // Instantiate a UnionFind object based on QuickFind or QuickUnion
         
         // final UnionFind_QuickFind unionObj = new UnionFind_QuickFind(Integer.parseInt(fileLine));
-        final UnionFind_QuickUnion unionObj = new UnionFind_QuickUnion(Integer.parseInt(fileLine));
-        // final UnionFind_WeightedUnion unionObj = new UnionFind_WeightedUnion(Integer.parseInt(fileLine));
+        // final UnionFind_QuickUnion unionObj = new UnionFind_QuickUnion(Integer.parseInt(fileLine));
+        final UnionFind_WeightedUnion unionObj = new UnionFind_WeightedUnion(Integer.parseInt(fileLine));
         Integer opCounter = 0;
         
         long startTime = System.nanoTime();
@@ -80,7 +80,7 @@ public class UnionFind_Client {
         try{
             queryFileLines = new BufferedReader(new FileReader(queryFile));
         }
-        catch (FileNotFoundException f){
+        catch (final FileNotFoundException f){
             System.out.println("Input File not found");
             return;
         }
