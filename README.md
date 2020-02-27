@@ -1,6 +1,6 @@
 # Algorithms_Submissions
 
-Algorithm Implementations and Performance for algorithms from the __Algorithms and Data Structures (Part 1)__ course from Princeton University
+Algorithm Implementations and Performance for algorithms from the __Algorithms and Data Structures (Part 1)__ course from Princeton University. Please see the [Repository Wiki](https://github.com/sreeharshau/Algorithms_Submissions/wiki) for algorithm performance results.
 
 # Repository Structure
 Each sub-project (except HelloWorld) comes with full maven support and can be built using __mvn package__. To run the application, refer to the sections below.
